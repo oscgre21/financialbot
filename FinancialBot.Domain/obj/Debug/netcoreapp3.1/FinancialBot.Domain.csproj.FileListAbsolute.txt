@@ -1,0 +1,10 @@
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Domain\bin\Debug\netcoreapp3.1\FinancialBot.Domain.deps.json
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Domain\bin\Debug\netcoreapp3.1\FinancialBot.Domain.dll
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Domain\bin\Debug\netcoreapp3.1\FinancialBot.Domain.pdb
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Domain\obj\Debug\netcoreapp3.1\FinancialBot.Domain.csproj.AssemblyReference.cache
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Domain\obj\Debug\netcoreapp3.1\FinancialBot.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Domain\obj\Debug\netcoreapp3.1\FinancialBot.Domain.AssemblyInfoInputs.cache
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Domain\obj\Debug\netcoreapp3.1\FinancialBot.Domain.AssemblyInfo.cs
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Domain\obj\Debug\netcoreapp3.1\FinancialBot.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Domain\obj\Debug\netcoreapp3.1\FinancialBot.Domain.dll
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Domain\obj\Debug\netcoreapp3.1\FinancialBot.Domain.pdb

@@ -1,0 +1,17 @@
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\bin\Debug\netcoreapp3.1\FinancialBot.Services.deps.json
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\bin\Debug\netcoreapp3.1\FinancialBot.Services.dll
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\bin\Debug\netcoreapp3.1\FinancialBot.Services.pdb
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\bin\Debug\netcoreapp3.1\FinancialBot.BL.dll
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\bin\Debug\netcoreapp3.1\FinancialBot.Core.dll
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\bin\Debug\netcoreapp3.1\FinancialBot.Domain.dll
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\bin\Debug\netcoreapp3.1\FinancialBot.BL.pdb
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\bin\Debug\netcoreapp3.1\FinancialBot.Core.pdb
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\bin\Debug\netcoreapp3.1\FinancialBot.Domain.pdb
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\obj\Debug\netcoreapp3.1\FinancialBot.Services.csproj.AssemblyReference.cache
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\obj\Debug\netcoreapp3.1\FinancialBot.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\obj\Debug\netcoreapp3.1\FinancialBot.Services.AssemblyInfoInputs.cache
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\obj\Debug\netcoreapp3.1\FinancialBot.Services.AssemblyInfo.cs
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\obj\Debug\netcoreapp3.1\FinancialBot.Services.csproj.CoreCompileInputs.cache
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\obj\Debug\netcoreapp3.1\FinancialBot.Services.csproj.CopyComplete
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\obj\Debug\netcoreapp3.1\FinancialBot.Services.dll
+C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.Services\obj\Debug\netcoreapp3.1\FinancialBot.Services.pdb
