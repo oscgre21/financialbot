@@ -74,6 +74,11 @@ Follow the next steps to run this project if you going to use your own instance 
 Update-Database
 ```
 ---
+
+##Instaling NodeJS dependency
+
+1. Go to this path inside the project **aChatBotApi\Spa** and run on the terminal  **npm i**
+
 ## Run you own Rabbit on Docker
 
 1. Open Powershell or Bash and run the next command to start the RabbitMQ Docker image as a container. It's important that you keep this Powershell or Bash window open while running the application.
@@ -81,7 +86,8 @@ Update-Database
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
 ```
 
-5. Now you can run the application.
+
+2. Now you can run the application.
 
 ---
 
