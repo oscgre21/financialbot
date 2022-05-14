@@ -1,0 +1,87 @@
+<div class="container">
+	<div class="row no-gutters">
+	  <div class="col-md-4 border-right">
+		<div class="settings-tray">
+		   &nbsp;
+		  <span class="settings-tray--right">
+            <select class="form-control"  [(ngModel)]="selectedGroup" (change)="filterMessages()">
+                <option *ngFor="let g of actualGroup">
+                    {{g.name}}
+                 </option> 
+              </select>
+			
+		  </span>
+          <span class="settings-tray--right">
+             <i class="material-icons" (click)="addNewGroup()">Add new group</i>
+          </span>
+		</div>
+		<div *ngFor="let item of connectedUsers;">
+		<div class="friend-drawer friend-drawer--onhover" >
+		  <img class="profile-image" src="https://picsum.photos/200/300" alt="">
+		  <div class="text">
+			<h6>{{ item.username }}</h6> 
+		  </div>  
+		</div>
+		<hr>
+		</div> 
+	  </div>
+	  <div class="col-md-8">
+		<div class="settings-tray">
+			<div class="friend-drawer no-gutters friend-drawer--grey">
+		 
+			<div class="text">
+			 
+			  <p class="text-muted">&nbsp;</p>
+			</div>
+			<span class="settings-tray--right">
+ 
+			</span>
+		  </div>
+		</div>
+		<div class="chat-panel">
+			<div #panel id="panel" class="cpanel" >
+				<div class="row no-gutters"  *ngFor="let item of actualFilterMessages;">
+					
+					<div class="col-md-3 " *ngIf="getStyleClassByUserName(item.username,'other')"> 
+						<div class="boxhour">
+							<h2><b>{{ item.username }}</b></h2>&nbsp;&nbsp;
+							<h3>{{ item.sendedDateUtc | date:'medium' }}</h3>
+						</div>
+                        <div class="chat-bubble chat-bubble--left ">
+                            {{ item.message }}
+                        </div>
+					</div>
+					<div class="col-md-3 " *ngIf="getStyleClassByUserName(item.username,'bot')"> 
+						<div class="boxhour">
+							<h2><b>{{ item.username }}</b></h2>&nbsp;&nbsp;
+							<h3>{{ item.sendedDateUtc | date:'medium' }}</h3>
+						</div>
+                        <div class="chat-bubble chat-bubble--left ">
+                            {{ item.message }}
+                        </div>
+					</div>                    
+					<div class="col-md-3 offset-md-9" *ngIf="getStyleClassByUserName(item.username,'me')">
+						<div class="boxhour">
+							<h2><b>{{ item.username }}</b></h2>&nbsp;&nbsp;
+							<h3>{{ item.sendedDateUtc | date:'medium' }}</h3>
+						</div>
+						<div class="chat-bubble chat-bubble--right">
+							{{ item.message }}
+						</div>
+					</div>			
+				</div>
+			</div>
+	
+		  <div class="row">
+			<div class="col-12">
+			  <div class="chat-box-tray">
+				  
+				<input type="text" placeholder="Type your message here..."  [formControl]="message" (keydown)="checkIsEnterKey($event)">
+				<button type="button" class="btn btn-link" (click)="send()">Send</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
