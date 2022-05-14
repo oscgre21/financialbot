@@ -75,7 +75,7 @@ Update-Database
 ```
 ---
 
-##Instaling NodeJS dependency
+## Instaling NodeJS dependency
 
 1. Go to this path inside the project **aChatBotApi\Spa** and run on the terminal  **npm i**
 
