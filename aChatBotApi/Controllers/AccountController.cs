@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace aChatBotApi.Controllers
 {
+    
     [Route("api/accounts")]
     [ApiController]
     public class AccountController : ControllerBase
@@ -60,7 +61,7 @@ namespace aChatBotApi.Controllers
             var tokenOptions = _jwt.GenerateTokenOptions(signingCredentials, claims);
             var token = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
 
-            return Ok(new LoginReponseDto { IsAuthSuccessful = true, Token = token });
+            return Ok(new LoginReponseDto { IsSuccess = true, Token = token });
         }
     }
 }

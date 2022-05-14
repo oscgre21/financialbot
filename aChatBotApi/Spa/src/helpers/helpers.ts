@@ -1,6 +1,6 @@
 
 export function getManUrl() {
-    return 'http://localhost:27760/';//document.getElementsByTagName('base')[0].href;
+    return  document.getElementsByTagName('base')[0].href;
 }
   
 

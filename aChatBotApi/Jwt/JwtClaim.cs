@@ -33,7 +33,7 @@ namespace aChatBotApi.Jwt
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.UserName, ClaimValueTypes.String),
-                new Claim("userName", user.UserName, ClaimValueTypes.String)
+                new Claim("username", user.UserName, ClaimValueTypes.String)
             };
             return claims;
         }

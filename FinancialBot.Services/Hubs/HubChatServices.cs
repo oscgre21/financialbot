@@ -1,5 +1,6 @@
 ﻿using FinancialBot.BL.DTOs;
 using FinancialBot.Core.Repository;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 using System;
@@ -9,16 +10,17 @@ using System.Threading.Tasks;
 
 namespace FinancialBot.Services.Hubs
 {
-    [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class HubChatServices : Hub
     {
         private readonly IMqtMessageSender _qtt;
+        private static IList<HubGroups> _groups = new List<HubGroups>();
         private static IList<HubUsers> _connectedUsers = new List<HubUsers>();
         private static IList<UsersMessages> _currentMessages = new List<UsersMessages>();
 
         public HubChatServices(IMqtMessageSender sender)
         {
-            _qtt = sender;
+            _qtt = sender; 
         }
 
         private void AddToCurrentMessages(UsersMessages message)
@@ -34,17 +36,17 @@ namespace FinancialBot.Services.Hubs
             string userName = Context.User.Identity.Name;
             string connectionId = Context.ConnectionId;
 
-            if (!_connectedUsers.Any(connectedUser => connectedUser.UserName == userName))
+            if (!_connectedUsers.Any(actualUser => actualUser.username == userName))
             {
-                _connectedUsers.Add(new HubUsers { ConnectionId = connectionId, UserName = userName });
-                Clients.All.SendAsync("ConnectedUsersChanged", _connectedUsers);
+                _connectedUsers.Add(new HubUsers { ConnectionId = connectionId, username = userName });
+                Clients.All.SendAsync("UsersChanged", _connectedUsers);
             }
             else
             {
-                Clients.Caller.SendAsync("ConnectedUsersChanged", _connectedUsers);
+                Clients.Caller.SendAsync("UsersChanged", _connectedUsers);
             }
 
-            Clients.Caller.SendAsync("CurrentMessages", _currentMessages);
+            Clients.Caller.SendAsync("actualMessages", _currentMessages);
 
             return base.OnConnectedAsync();
         }
@@ -64,6 +66,15 @@ namespace FinancialBot.Services.Hubs
                 _qtt.SendMessage(message);
             }
         }
+        public async Task AddNewGroup(string groupName)
+        { 
+            if (!_groups.Any(group => group.name == groupName))
+            {
+                _groups.Add(new HubGroups {name= groupName });
+               
+            }
+            Clients.All.SendAsync("GroupChanged", _groups);
+        }
 
         public void SaveBotMessage(UsersMessages message)
         {
@@ -72,10 +83,10 @@ namespace FinancialBot.Services.Hubs
 
         public async Task DisconnectUser(string userName)
         {
-            if (_connectedUsers.Any(currentUser => currentUser.UserName == userName))
+            if (_connectedUsers.Any(actualUser => actualUser.username == userName))
             {
-                _connectedUsers = _connectedUsers.Where(currentUser => currentUser.UserName != userName).ToList();
-                await Clients.All.SendAsync("ConnectedUsersChanged", _connectedUsers);
+                _connectedUsers = _connectedUsers.Where(actualUser => actualUser.username != userName).ToList();
+                await Clients.All.SendAsync("UsersChanged", _connectedUsers);
             }
         }
     }

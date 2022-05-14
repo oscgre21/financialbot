@@ -1,4 +1,5 @@
 using aChatBotApi.Jwt;
+using aChatBotApi.Models;
 using FinancialBot.Core;
 using FinancialBot.Core.IoC;
 using FinancialBot.Core.Repository;
@@ -43,8 +44,10 @@ namespace aChatBotApi
 
             services.AddOptions();
             services.AddControllersWithViews();
-            //services.AddControllers();
-            services.AddDbContext<BaseDBContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("aChatBotApi")));
+
+            // services.AddDbContext<BaseDBContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("aChatBotApi")));
+            // services.AddDbContext<BaseDBContext>(opt => opt.UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString()), ServiceLifetime.Scoped, ServiceLifetime.Scoped);
+            services.AddDbContext<BaseDBContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("SQLite"), b => b.MigrationsAssembly("WebChatApi")));
             services.AddIdentity<Users, IdentityRole>().AddEntityFrameworkStores<BaseDBContext>();
             services.AddSignalR(opt => { opt.ClientTimeoutInterval = TimeSpan.FromMinutes(60); opt.KeepAliveInterval = TimeSpan.FromMinutes(30); }).AddJsonProtocol();
    
@@ -54,6 +57,25 @@ namespace aChatBotApi
             {
                 configuration.RootPath = "Spa/dist";
             });
+
+            #region CORS
+            var securitySettings = Configuration.GetSection("SecurityConfig").Get<SecurityConfig>();
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder=> builder.WithOrigins(securitySettings.CORSClientUrls));
+                options.AddDefaultPolicy(builder => builder.WithOrigins("http://localhost:4200"));
+            
+                options.AddPolicy("AllowAllPolicy",
+                    builder =>
+                    {
+                        builder
+                        .WithOrigins("http://localhost:4200")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod().AllowCredentials();
+                            
+                    });
+            });
+            #endregion
 
             #region IoC Registry
             services.AddCoreRegistry(Configuration);  
@@ -77,13 +99,13 @@ namespace aChatBotApi
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true,
-                    ValidateAudience = true,
+                    ValidateAudience = false,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true, 
                     ValidIssuer = jwtSettings.GetSection("vIssuer").Value,
                     ValidAudience = jwtSettings.GetSection("Audience").Value,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.GetSection("vIssuer").Value))
-                };
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.GetSection("sKey").Value))
+                }; 
             });
         }
         private void RegisterServices(IServiceCollection services)
@@ -113,7 +135,7 @@ namespace aChatBotApi
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-            app.UseHttpsRedirection();
+          //  app.UseHttpsRedirection();
             app.UseStaticFiles();
             if (!env.IsDevelopment())
             {
@@ -121,6 +143,9 @@ namespace aChatBotApi
             }
 
             app.UseRouting();
+
+            app.UseCors("AllowAllPolicy"); 
+
             app.UseAuthentication();
             app.UseAuthorization();
 
@@ -131,7 +156,7 @@ namespace aChatBotApi
                     pattern: "{controller}/{action=Index}/{id?}");
                 endpoints.MapHub<HubChatServices>("/hub/chat");
             });
-            /*
+          
             app.UseSpa(spa =>
             { 
                 spa.Options.SourcePath = "Spa";
@@ -140,7 +165,7 @@ namespace aChatBotApi
                 {
                     spa.UseAngularCliServer(npmScript: "start");
                 }
-            });*/
+            });
         }
     }
 }

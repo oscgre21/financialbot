@@ -1,21 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\aChatBotApi\\aChatBotApi.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\aChatBotApi\\aChatBotApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\aChatBotApi\\aChatBotApi.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\aChatBotApi\\aChatBotApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\aChatBotApi\\aChatBotApi.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\aChatBotApi\\aChatBotApi.csproj",
         "projectName": "aChatBotApi",
-        "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\aChatBotApi\\aChatBotApi.csproj",
-        "packagesPath": "C:\\Users\\bmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\aChatBotApi\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\aChatBotApi\\aChatBotApi.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\aChatBotApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -28,14 +35,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Core\\FinancialBot.Core.csproj": {
-                "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Core\\FinancialBot.Core.csproj"
+              "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Core\\FinancialBot.Core.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Core\\FinancialBot.Core.csproj"
               },
-              "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Domain\\FinancialBot.Domain.csproj": {
-                "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Domain\\FinancialBot.Domain.csproj"
+              "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Domain\\FinancialBot.Domain.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Domain\\FinancialBot.Domain.csproj"
               },
-              "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Services\\FinancialBot.Services.csproj": {
-                "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Services\\FinancialBot.Services.csproj"
+              "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Services\\FinancialBot.Services.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Services\\FinancialBot.Services.csproj"
               }
             }
           }
@@ -91,22 +98,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.BL\\FinancialBot.BL.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.BL\\FinancialBot.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.BL\\FinancialBot.BL.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.BL\\FinancialBot.BL.csproj",
         "projectName": "FinancialBot.BL",
-        "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.BL\\FinancialBot.BL.csproj",
-        "packagesPath": "C:\\Users\\bmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.BL\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.BL\\FinancialBot.BL.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.BL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -119,8 +133,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Domain\\FinancialBot.Domain.csproj": {
-                "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Domain\\FinancialBot.Domain.csproj"
+              "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Domain\\FinancialBot.Domain.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Domain\\FinancialBot.Domain.csproj"
               }
             }
           }
@@ -155,22 +169,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Core\\FinancialBot.Core.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Core\\FinancialBot.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Core\\FinancialBot.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Core\\FinancialBot.Core.csproj",
         "projectName": "FinancialBot.Core",
-        "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Core\\FinancialBot.Core.csproj",
-        "packagesPath": "C:\\Users\\bmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Core\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Core\\FinancialBot.Core.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -183,8 +204,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.BL\\FinancialBot.BL.csproj": {
-                "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.BL\\FinancialBot.BL.csproj"
+              "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.BL\\FinancialBot.BL.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.BL\\FinancialBot.BL.csproj"
               }
             }
           }
@@ -223,22 +244,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Domain\\FinancialBot.Domain.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Domain\\FinancialBot.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Domain\\FinancialBot.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Domain\\FinancialBot.Domain.csproj",
         "projectName": "FinancialBot.Domain",
-        "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Domain\\FinancialBot.Domain.csproj",
-        "packagesPath": "C:\\Users\\bmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Domain\\FinancialBot.Domain.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -287,22 +315,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Services\\FinancialBot.Services.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Services\\FinancialBot.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Services\\FinancialBot.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Services\\FinancialBot.Services.csproj",
         "projectName": "FinancialBot.Services",
-        "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Services\\FinancialBot.Services.csproj",
-        "packagesPath": "C:\\Users\\bmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Services\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Services\\FinancialBot.Services.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\bmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -315,11 +350,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.BL\\FinancialBot.BL.csproj": {
-                "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.BL\\FinancialBot.BL.csproj"
+              "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.BL\\FinancialBot.BL.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.BL\\FinancialBot.BL.csproj"
               },
-              "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Core\\FinancialBot.Core.csproj": {
-                "projectPath": "C:\\Users\\bmi\\Desktop\\bot\\chat-bot-application\\FinancialBot.Core\\FinancialBot.Core.csproj"
+              "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Core\\FinancialBot.Core.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\MyChatBot\\financialbot\\FinancialBot.Core\\FinancialBot.Core.csproj"
               }
             }
           }
@@ -334,7 +369,15 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            },
             "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[3.1.18, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
               "version": "[3.1.18, )"
             },
@@ -366,7 +409,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

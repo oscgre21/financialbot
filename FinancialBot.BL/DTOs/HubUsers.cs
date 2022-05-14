@@ -8,6 +8,6 @@ namespace FinancialBot.BL.DTOs
     {
         public string ConnectionId { get; set; }
 
-        public string UserName { get; set; }
+        public string username { get; set; }
     }
 }

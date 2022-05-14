@@ -6,10 +6,12 @@ namespace FinancialBot.BL.DTOs
 {
     public class UsersMessages
     {
-        public string UserName { get; set; }
+        public string username { get; set; }
 
-        public DateTime SendedOnUtc { get; set; }
+        public DateTime sendedDateUtc { get; set; }
 
         public string Message { get; set; }
+
+        public string group { get; set; } = "Global";
     }
 }

@@ -11,3 +11,15 @@ C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.BL\obj\Debug\netcorea
 C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.BL\obj\Debug\netcoreapp3.1\FinancialBot.BL.csproj.CopyComplete
 C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.BL\obj\Debug\netcoreapp3.1\FinancialBot.BL.dll
 C:\Users\bmi\Desktop\bot\chat-bot-application\FinancialBot.BL\obj\Debug\netcoreapp3.1\FinancialBot.BL.pdb
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\bin\Debug\netcoreapp3.1\FinancialBot.BL.deps.json
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\bin\Debug\netcoreapp3.1\FinancialBot.BL.dll
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\bin\Debug\netcoreapp3.1\FinancialBot.BL.pdb
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\bin\Debug\netcoreapp3.1\FinancialBot.Domain.dll
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\bin\Debug\netcoreapp3.1\FinancialBot.Domain.pdb
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\obj\Debug\netcoreapp3.1\FinancialBot.BL.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\obj\Debug\netcoreapp3.1\FinancialBot.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\obj\Debug\netcoreapp3.1\FinancialBot.BL.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\obj\Debug\netcoreapp3.1\FinancialBot.BL.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\obj\Debug\netcoreapp3.1\FinancialBot.BL.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\obj\Debug\netcoreapp3.1\FinancialBot.BL.dll
+C:\Users\Administrator\Desktop\MyChatBot\financialbot\FinancialBot.BL\obj\Debug\netcoreapp3.1\FinancialBot.BL.pdb
