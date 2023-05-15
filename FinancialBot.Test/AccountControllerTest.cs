@@ -18,7 +18,6 @@ namespace FinancialBot.Test
 	{
 		
 		private readonly AccountController _controller;
-		//"AAL.US", "AAPL.US", "ABC.US", "ABC.US"
 
 		public AccountControllerTest()
 		{
