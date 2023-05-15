@@ -1,4 +1,4 @@
-﻿using aChatBotApi.Jwt;
+﻿using FinancialBot.Core.Jwt;
 using AutoMapper;
 using FinancialBot.BL.DTOs;
 using FinancialBot.Domain.Entities;
@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
+using System;
 
 namespace aChatBotApi.Controllers
 {
@@ -36,14 +37,21 @@ namespace aChatBotApi.Controllers
             if (dataUser == null || !ModelState.IsValid)
                 return BadRequest();
 
-            var user = _mapper.Map<Users>(dataUser);
-            var result = await _userManager.CreateAsync(user, dataUser.Password);
-
-            if (!result.Succeeded)
+            try
             {
-                var errors = result.Errors.Select(e => e.Description);
-                return BadRequest(new RegisterResponseDto { Errors = errors });
-            }
+                var user = _mapper.Map<Users>(dataUser);
+                var result = await _userManager.CreateAsync(user, dataUser.Password);
+
+                if (!result.Succeeded)
+                {
+                    var errors = result.Errors.Select(e => e.Description).ToList();
+
+                    return BadRequest(new RegisterResponseDto { Errors = errors });
+                }
+            }catch(Exception e)
+            {
+                return StatusCode(409);
+			}
 
             return StatusCode(201);
         }

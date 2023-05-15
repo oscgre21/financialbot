@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebChatApi", "aChatBotApi\WebChatApi.csproj", "{83FA5C7A-35F4-4BB4-82B1-67067C511020}"
 EndProject
@@ -21,7 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialBot.BL", "Financia
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialBot.Services", "FinancialBot.Services\FinancialBot.Services.csproj", "{E20D35F6-975B-46C7-A5D8-2B5C37FDDD2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MqtBotApi", "MqtBotApi\MqtBotApi.csproj", "{C33451F3-5A5A-4BB8-81FB-6467846BCE91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqtBotApi", "MqtBotApi\MqtBotApi.csproj", "{C33451F3-5A5A-4BB8-81FB-6467846BCE91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B63A9C07-826F-4459-BD52-4BEED732E74A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialBot.Test", "FinancialBot.Test\FinancialBot.Test.csproj", "{C48B5B13-705C-471F-830D-E37C611C9D75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,10 @@ Global
 		{C33451F3-5A5A-4BB8-81FB-6467846BCE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C33451F3-5A5A-4BB8-81FB-6467846BCE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C33451F3-5A5A-4BB8-81FB-6467846BCE91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C48B5B13-705C-471F-830D-E37C611C9D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C48B5B13-705C-471F-830D-E37C611C9D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C48B5B13-705C-471F-830D-E37C611C9D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C48B5B13-705C-471F-830D-E37C611C9D75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,7 @@ Global
 		{6C4A8DA4-42F4-4C2E-9901-4824B2944AC9} = {1F6C395D-77B9-4F7C-A374-9071EDA27A13}
 		{E20D35F6-975B-46C7-A5D8-2B5C37FDDD2D} = {1F6C395D-77B9-4F7C-A374-9071EDA27A13}
 		{C33451F3-5A5A-4BB8-81FB-6467846BCE91} = {04E6374F-722C-4369-8F2C-506CF00D8F7A}
+		{C48B5B13-705C-471F-830D-E37C611C9D75} = {B63A9C07-826F-4459-BD52-4BEED732E74A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D42EB1FB-D64F-4B73-B793-43BBC9BCB7BE}

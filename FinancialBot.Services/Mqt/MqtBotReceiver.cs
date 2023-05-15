@@ -46,10 +46,16 @@ namespace FinancialBot.Services.Mqt
                 Password = _password
             };
 
-            _connection = factory.CreateConnection();
-            _connection.ConnectionShutdown += RabbitMQ_ConnectionShutdown;
-            _channel = _connection.CreateModel();
-            _channel.QueueDeclare(queue: _listenToQueueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
+            try
+            {
+                _connection = factory.CreateConnection();
+                _connection.ConnectionShutdown += RabbitMQ_ConnectionShutdown;
+                _channel = _connection.CreateModel();
+                _channel.QueueDeclare(queue: _listenToQueueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
+            }catch(Exception e)
+            {
+                _connection = null;
+            }
         }
 
         private void RabbitMQ_ConnectionShutdown(object sender, ShutdownEventArgs e) { }
@@ -99,6 +105,8 @@ namespace FinancialBot.Services.Mqt
 
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            if (_channel == null) { return Task.CompletedTask; }
+
             stoppingToken.ThrowIfCancellationRequested();
 
             var consumer = new EventingBasicConsumer(_channel);

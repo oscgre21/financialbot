@@ -41,7 +41,7 @@ namespace FinancialBot.Services.Mqt
         public StockModel GetStockQuote(UsersMessages clientMessage)
         {
             if (clientMessage == null)
-                throw new ArgumentNullException($"Fail the argument {nameof(clientMessage)} cannot be null.");
+                return null;
 
             string stockCode = GetStockCode(clientMessage.Message);
 
@@ -58,7 +58,7 @@ namespace FinancialBot.Services.Mqt
                 }
                 catch (Exception e)
                 {
-                    throw new FormatException(e.Message);
+                    return null;
                 }
             }
 

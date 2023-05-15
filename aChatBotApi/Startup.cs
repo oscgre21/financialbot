@@ -1,4 +1,4 @@
-using aChatBotApi.Jwt;
+using FinancialBot.Core.Jwt;
 using aChatBotApi.Models;
 using FinancialBot.Core;
 using FinancialBot.Core.IoC;
@@ -80,49 +80,16 @@ namespace aChatBotApi
             #region IoC Registry
             services.AddCoreRegistry(Configuration);  
             #endregion
-
-            addJWTConfig(services);
-            addRabbitMqt(services);
+             
             RegisterServices(services);  
             
         }
-
-        private void addJWTConfig(IServiceCollection services)
-        {
-            var jwtSettings = Configuration.GetSection("JWT");
-            services.AddAuthentication(opt =>
-            {
-                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(options =>
-            {
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidateAudience = false,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true, 
-                    ValidIssuer = jwtSettings.GetSection("vIssuer").Value,
-                    ValidAudience = jwtSettings.GetSection("Audience").Value,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.GetSection("sKey").Value))
-                }; 
-            });
-        }
+         
         private void RegisterServices(IServiceCollection services)
-        {
-            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
-            services.AddScoped<JwtClaim>();
-
+        { 
             services.AddSingleton<IMqtMessageSender, MqtMessageSender>();
             services.AddHostedService<MqtMessageReceiverServices>();
-        }
-
-        private void addRabbitMqt(IServiceCollection services)
-        {
-            var serviceClientSettingsConfig = Configuration.GetSection("MQTRabbit");
-            services.Configure<RMqtConfiguration>(serviceClientSettingsConfig);
-        }
-
+        }  
          
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
